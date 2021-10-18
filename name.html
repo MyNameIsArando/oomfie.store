@@ -2,12 +2,12 @@
 <html>
 <head>
     <!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
-    <title>Cunny Namegen</title>
+    <title>namegen oomfie</title>
     <link href="https://fonts.googleapis.com/css?family=Anton|Cantarell&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta property="title" content="The Cunny Store">
-    <meta name="description" content="Get your free randomly generated Cunny.Store worthy name.">
+    <meta property="title" content="the oomfie store">
+    <meta name="description" content="get your free randomly generated oomfie dot store certified name oomfie.">
     <meta name="keywords" content="allah, mohammad (peace be upon him)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset='utf-8'>
@@ -15,7 +15,7 @@
 <style>
     body {
         margin: 0; padding: 0;
-        height: 100%; width: 100%;
+        width: 100%;
         background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
         background-size: 1800% 1800%;
         text-align: center;
@@ -44,8 +44,17 @@
         50%{background-position:100% 19%}
         100%{background-position:0% 82%}
     }
+    @keyframes funny {
+        0% {color: lime;}
+        20% {color: red;}
+        40% {color: blue;}
+        60% {color: pink}
+        80% {color: orange;}
+        100% {color: #1ddde8;}
+    }
     a {
-        color: #fff;
+        animation: funny 2s;
+        animation-iteration-count: infinite;
     }
     html {
         height: 100%;
@@ -58,7 +67,6 @@
         text-align: center;
         display: inline-block;
         color: #fff;
-        margin-top: 22%;
     }
     button {
         background: #fff;
@@ -71,13 +79,19 @@
         padding: 0.5em 1.4em;
         cursor: pointer;
         margin-top: 4%;
+        transition: 0.2s all;
+    }
+    button:hover {
+        background: #000;
+        color: #fff;
+        transform: scale(1.1);
     }
     #title {
         display: block;
-        position: absolute;
         font-size: 2.2em;
-        bottom: 1.5%;
-        left: 1.5%;
+        padding-top: 5%;
+        animation: funny 2s;
+        animation-iteration-count: infinite;
     }
     @media screen and (max-width: 1080px) {
         p {
@@ -85,18 +99,565 @@
             margin-top: 5%;
         }
     }
+    #vidya {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
+    }
+    .sep {
+        width: 100%;
+        margin-top: 20%;
+        background-color: #000000a2;
+    }
+    img {
+        height: 100px; width: 100px;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+		cursor: pointer;
+    }
+
 </style>
 <body>
     <div>
+        <video autoplay muted loop id="vidya">
+            <source src="vid/1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="sep">
+            <p id="nameOutput1">a</p>
+            <p id="nameOutput2">a</p>
+            <p id="nameOutput3">a</p>
+        </div>
+        <button onClick="window.location.reload();">Generate</button>
         <p id="title">20,460,240 combinations | <a href="changelog.txt" target="_blank">Changelog</a></p>
-        <p id="nameOutput1">if you don't get a name</p>
-        <p id="nameOutput2">enable javascript</p>
-        <p id="nameOutput3">you fucking waste of space</p>
+        <img src="volume.png" id="mute" />
     </div>
-    <button onClick="window.location.reload();">Generate</button>
+    
 </body>
 <script src="jquery.js"></script>
 <script>
+    var button = document.getElementById('vidya');
+    document.getElementById('mute').onclick = function (){
+
+    if (video.muted === false) {    
+       video.muted = true;
+    }
+
+    else {
+        video.muted = false;
+    }
+
+    };
+    document.getElementById('vidya').volume = 0.02; /* Music Volume */
+var videoStorage = [ 
+    'vid/1',
+    'vid/2',
+    'vid/3',
+    'vid/4',
+    'vid/5',
+    'vid/6',
+    'vid/7',
+    'vid/8',
+    'vid/9',
+    'vid/10',
+    'vid/11',
+    'vid/12',
+    'vid/13',
+    'vid/14',
+    'vid/15',
+    'vid/16',
+    'vid/17',
+    'vid/18',
+    'vid/19',
+    'vid/20',
+    'vid/21',
+    'vid/22',
+    'vid/23',
+    'vid/24',
+    'vid/25',
+    'vid/26',
+    'vid/27',
+    'vid/28',
+    'vid/29',
+    'vid/30',
+    'vid/31',
+    'vid/32',
+    'vid/33',
+    'vid/34',
+    'vid/35',
+    'vid/36',
+    'vid/37',
+    'vid/38',
+    'vid/39',
+    'vid/40',
+    'vid/41',
+    'vid/42',
+    'vid/43',
+    'vid/44',
+    'vid/45',
+    'vid/46',
+    'vid/47',
+    'vid/48',
+    'vid/49',
+    'vid/50',
+    'vid/51',
+    'vid/52',
+    'vid/53',
+    'vid/54',
+    'vid/55',
+    'vid/56',
+    'vid/57',
+    'vid/58',
+    'vid/59',
+    'vid/60',
+    'vid/61',
+    'vid/62',
+    'vid/63',
+    'vid/64',
+    'vid/65',
+    'vid/66',
+    'vid/67',
+    'vid/68',
+    'vid/69',
+    'vid/70',
+    'vid/71',
+    'vid/72',
+    'vid/73',
+    'vid/74',
+    'vid/75',
+    'vid/76',
+    'vid/77',
+    'vid/78',
+    'vid/79',
+    'vid/80',
+    'vid/81',
+    'vid/82',
+    'vid/83',
+    'vid/84',
+    'vid/85',
+    'vid/86',
+    'vid/87',
+    'vid/88',
+    'vid/89',
+    'vid/90',
+    'vid/91',
+    'vid/92',
+    'vid/93',
+    'vid/94',
+    'vid/95',
+    'vid/96',
+    'vid/97',
+    'vid/98',
+    'vid/99',
+    'vid/100',
+    'vid/101',
+    'vid/102',
+    'vid/103',
+    'vid/104',
+    'vid/105',
+    'vid/106',
+    'vid/107',
+    'vid/108',
+    'vid/109',
+    'vid/110',
+    'vid/111',
+    'vid/112',
+    'vid/113',
+    'vid/114',
+    'vid/115',
+    'vid/116',
+    'vid/117',
+    'vid/118',
+    'vid/119',
+    'vid/120',
+    'vid/121',
+    'vid/122',
+    'vid/123',
+    'vid/124',
+    'vid/125',
+    'vid/126',
+    'vid/127',
+    'vid/128',
+    'vid/129',
+    'vid/130',
+    'vid/131',
+    'vid/132',
+    'vid/133',
+    'vid/134',
+    'vid/135',
+    'vid/136',
+    'vid/137',
+    'vid/138',
+    'vid/139',
+    'vid/140',
+    'vid/141',
+    'vid/142',
+    'vid/143',
+    'vid/144',
+    'vid/145',
+    'vid/146',
+    'vid/147',
+    'vid/148',
+    'vid/149',
+    'vid/150',
+    'vid/151',
+    'vid/152',
+    'vid/153',
+    'vid/154',
+    'vid/155',
+    'vid/156',
+    'vid/157',
+    'vid/158',
+    'vid/159',
+    'vid/160',
+    'vid/161',
+    'vid/162',
+    'vid/163',
+    'vid/164',
+    'vid/165',
+    'vid/166',
+    'vid/167',
+    'vid/168',
+    'vid/169',
+    'vid/170',
+    'vid/171',
+    'vid/172',
+    'vid/173',
+    'vid/174',
+    'vid/175',
+    'vid/176',
+    'vid/177',
+    'vid/178',
+    'vid/179',
+    'vid/180',
+    'vid/181',
+    'vid/182',
+    'vid/183',
+    'vid/184',
+    'vid/185',
+    'vid/186',
+    'vid/187',
+    'vid/188',
+    'vid/189',
+    'vid/190',
+    'vid/191',
+    'vid/192',
+    'vid/193',
+    'vid/194',
+    'vid/195',
+    'vid/196',
+    'vid/197',
+    'vid/198',
+    'vid/199',
+    'vid/200',
+    'vid/201',
+    'vid/202',
+    'vid/203',
+    'vid/204',
+    'vid/205',
+    'vid/206',
+    'vid/207',
+    'vid/208',
+    'vid/209',
+    'vid/210',
+    'vid/211',
+    'vid/212',
+    'vid/213',
+    'vid/214',
+    'vid/215',
+    'vid/216',
+    'vid/217',
+    'vid/218',
+    'vid/219',
+    'vid/220',
+    'vid/221',
+    'vid/222',
+    'vid/223',
+    'vid/224',
+    'vid/225',
+    'vid/226',
+    'vid/227',
+    'vid/228',
+    'vid/229',
+    'vid/230',
+    'vid/231',
+    'vid/232',
+    'vid/233',
+    'vid/234',
+    'vid/235',
+    'vid/236',
+    'vid/237',
+    'vid/238',
+    'vid/239',
+    'vid/240',
+    'vid/241',
+    'vid/242',
+    'vid/243',
+    'vid/244',
+    'vid/245',
+    'vid/246',
+    'vid/247',
+    'vid/248',
+    'vid/249',
+    'vid/250',
+    'vid/251',
+    'vid/252',
+    'vid/253',
+    'vid/254',
+    'vid/255',
+    'vid/256',
+    'vid/257',
+    'vid/258',
+    'vid/259',
+    'vid/260',
+    'vid/261',
+    'vid/262',
+    'vid/263',
+    'vid/264',
+    'vid/265',
+    'vid/266',
+    'vid/267',
+    'vid/268',
+    'vid/269',
+    'vid/270',
+    'vid/271',
+    'vid/272',
+    'vid/273',
+    'vid/274',
+    'vid/275',
+    'vid/276',
+    'vid/277',
+    'vid/278',
+    'vid/279',
+    'vid/280',
+    'vid/281',
+    'vid/282',
+    'vid/283',
+    'vid/284',
+    'vid/285',
+    'vid/286',
+    'vid/287',
+    'vid/288',
+    'vid/289',
+    'vid/290',
+    'vid/291',
+    'vid/292',
+    'vid/293',
+    'vid/294',
+    'vid/295',
+    'vid/296',
+    'vid/297',
+    'vid/298',
+    'vid/299',
+    'vid/300',
+    'vid/301',
+    'vid/302',
+    'vid/303',
+    'vid/304',
+    'vid/305',
+    'vid/306',
+    'vid/307',
+    'vid/308',
+    'vid/309',
+    'vid/310',
+    'vid/311',
+    'vid/312',
+    'vid/313',
+    'vid/314',
+    'vid/315',
+    'vid/316',
+    'vid/317',
+    'vid/318',
+    'vid/319',
+    'vid/320',
+    'vid/321',
+    'vid/322',
+    'vid/323',
+    'vid/324',
+    'vid/325',
+    'vid/326',
+    'vid/327',
+    'vid/328',
+    'vid/329',
+    'vid/330',
+    'vid/331',
+    'vid/332',
+    'vid/333',
+    'vid/334',
+    'vid/335',
+    'vid/336',
+    'vid/337',
+    'vid/338',
+    'vid/339',
+    'vid/340',
+    'vid/341',
+    'vid/342',
+    'vid/343',
+    'vid/344',
+    'vid/345',
+    'vid/346',
+    'vid/347',
+    'vid/348',
+    'vid/349',
+    'vid/350',
+    'vid/351',
+    'vid/352',
+    'vid/353',
+    'vid/354',
+    'vid/355',
+    'vid/356',
+    'vid/357',
+    'vid/358',
+    'vid/359',
+    'vid/360',
+    'vid/361',
+    'vid/362',
+    'vid/363',
+    'vid/364',
+    'vid/365',
+    'vid/366',
+    'vid/367',
+    'vid/368',
+    'vid/369',
+    'vid/370',
+    'vid/371',
+    'vid/372',
+    'vid/373',
+    'vid/374',
+    'vid/375',
+    'vid/376',
+    'vid/377',
+    'vid/378',
+    'vid/379',
+    'vid/380',
+    'vid/381',
+    'vid/382',
+    'vid/383',
+    'vid/384',
+    'vid/385',
+    'vid/386',
+    'vid/387',
+    'vid/388',
+    'vid/389',
+    'vid/390',
+    'vid/391',
+    'vid/392',
+    'vid/393',
+    'vid/394',
+    'vid/395',
+    'vid/396',
+    'vid/397',
+    'vid/398',
+    'vid/399',
+    'vid/400',
+    'vid/401',
+    'vid/402',
+    'vid/403',
+    'vid/404',
+    'vid/405',
+    'vid/406',
+    'vid/407',
+    'vid/408',
+    'vid/409',
+    'vid/410',
+    'vid/411',
+    'vid/412',
+    'vid/413',
+    'vid/414',
+    'vid/415',
+    'vid/416',
+    'vid/417',
+    'vid/418',
+    'vid/419',
+    'vid/420',
+    'vid/421',
+    'vid/422',
+    'vid/423',
+    'vid/424',
+    'vid/425',
+    'vid/426',
+    'vid/427',
+    'vid/428',
+    'vid/429',
+    'vid/430',
+    'vid/431',
+    'vid/432',
+    'vid/433',
+    'vid/434',
+    'vid/435',
+    'vid/436',
+    'vid/437',
+    'vid/438',
+    'vid/439',
+    'vid/440',
+    'vid/441',
+    'vid/442',
+    'vid/443',
+    'vid/444',
+    'vid/445',
+    'vid/446',
+    'vid/447',
+    'vid/448',
+    'vid/449',
+    'vid/450',
+    'vid/451',
+    'vid/452',
+    'vid/453',
+    'vid/454',
+    'vid/455',
+    'vid/456',
+    'vid/457',
+    'vid/458',
+    'vid/459',
+    'vid/460',
+    'vid/461',
+    'vid/462',
+    'vid/463',
+    'vid/464',
+    'vid/465',
+    'vid/466',
+    'vid/467',
+    'vid/468',
+    'vid/469',
+    'vid/470',
+    'vid/471',
+    'vid/472',
+    'vid/473',
+    'vid/474',
+    'vid/475',
+    'vid/476',
+    'vid/477',
+    'vid/478',
+    'vid/479',
+    'vid/480',
+    'vid/481',
+    'vid/482',
+    'vid/483',
+    'vid/484',
+    'vid/485',
+    'vid/486',
+    'vid/487',
+    'vid/488',
+    'vid/489',
+    'vid/490',
+    'vid/491',
+    'vid/492',
+    'vid/493',
+    'vid/494'
+],
+video = document.querySelector('video'),
+activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];        
+        
+if(video.canPlayType('video/webm')) {
+    video.setAttribute('src', activeVideoUrl + '.mp4');
+} else if(video.canPlayType('video/mp4')) {
+    video.setAttribute('src', activeVideoUrl + '.mp4');
+}
+
     $(function() {
     var myArray = [
         "Women",
@@ -127,6 +688,7 @@
         "kitten",
         "ram ranch",
         "tax",
+        "esoteric",
         "gang",
         "coon",
         "kike",
@@ -363,6 +925,7 @@
         "incel",
         "LITERAL CHILD",
         "CCP",
+        "breedable",
         "腾讯",
         "fentanyl",
         "Jamie literally recommending ",
@@ -401,6 +964,8 @@
         " on the timeline",
         "jamer",
         "cowboy",
+        "is breedable",
+        "goyim",
         "player",
         "racing",
         "OY VEY",
@@ -409,6 +974,7 @@
         "fucker",
         "smasher",
         "allah",
+        "empath",
         "transvestite",
         "smoker",
         "shitter",
@@ -736,6 +1302,7 @@
         "griller",
         "cooker",
         "gasser",
+        "gooner",
         "electrocuter",
         "choker",
         "boiler",
