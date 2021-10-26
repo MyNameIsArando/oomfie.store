@@ -1,0 +1,330 @@
+a {
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+}
+body {
+	margin: 0; padding: 0;
+    height: 100%; width: 100%;
+    background-color: #202020;
+    background-image: url('../img/bg.png');
+}
+h1,h2 {
+    font-family: 'Cantarell', sans-serif;
+    letter-spacing: 5px;
+    margin: 0; padding: 0;
+    text-shadow: 1px 1px 5px #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #fff;
+}
+h2 {
+    font-size: 2em;
+    color: inherit;
+}
+h4 {
+    color: #fff;
+    font-size: 18px;
+    display: inline;
+    padding: 0 0 4px 0;
+    margin: 0 20px;
+    transition: 0.2s ease-in-out;
+    font-family: 'Cantarell', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+h4:hover {
+    margin: 0 25px;
+    color: #35b88f;
+}
+hr {
+    margin: 30px 40% 30px 40%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+html {
+	height: 100%;
+}
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.6em;
+    margin: 0.7em 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* General Classes */
+.container {
+    width: 100%; height: 100%;
+    background-color: #35b88f;
+    background-image: url('../img/banner.svg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.first {
+    width: 100%; height: 100%;
+}
+.hello {
+    width: 100%; height: 100%;
+}
+
+/* Opener */
+#logo {
+    width: 300px; height: 300px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 30px;
+    border: #82cab3 solid 5px;
+}
+#arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+}
+
+/* Intro */
+.introCont {
+    width: 100%;
+    background-color: #141414;
+    background-image: url('../img/banner.svg');
+    background-position: center;
+    background-size: cover;
+}
+.introBg {
+    width: 100%; padding: 6em 0 4em 0;
+    color: #fff;
+    text-align: center;
+}
+.t44button {
+    display:inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 50px;
+    background: #45f1bb;
+    border: 3px solid #74ffd3;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 16px;
+    margin: 50px 30px 0 30px;
+    text-transform: lowercase;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.t44button:hover {
+    transform: scale(1.05);
+    border: 6px solid #74ffd3;
+}
+
+/* Nav */
+.navBar {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #202020;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+.navItem {
+    padding: 0 8%;
+}
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Content */
+.content {
+    width: 100%; height: 100%;
+    background-color: #121212;
+    display: none;
+}
+#line {
+    margin: 20px 43% 30px 43%;
+}
+
+.factionCont {
+    width: 100%; height: 100%;
+    display: none;
+    background-image: url('../img/tile.png');
+    background-position: center;
+    
+}
+.factionCont.show {
+    display: block;
+}
+.factionPad {
+    padding: 2em 0;
+}
+.factionTitle {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 5px;
+}
+.factionDesc {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0.5em 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Avis */
+.aviCont {
+    text-align: center;
+    font-size: 0;
+    padding: 50px 0;
+}
+.avatar {
+    width: 70px; height: 70px;
+    background-color: #202020;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 13px;
+    border-radius: 5px;
+    border: 4px solid #45f1bb;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;;
+}
+
+/* ----- Info ----- */
+.informationCont {
+    width: 100%; height: 1000px; 
+    background-color: #101010;
+    font-size: 0;
+}
+.infoSection {
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.infoSection.left {
+    width: 70%;
+}
+.infoSection.right {
+    width: 30%;
+    background: #154939;
+}
+
+/* Info Profile */
+.infoPad {
+    padding: 30px;
+}
+.infoProfile {
+    width: 100%;
+    font-size: 0;
+    text-align: left;
+}
+.infoAvatar {
+    width: 230px; height: 230px;
+    background-size: cover;
+    background-position: center;
+    background-color: #303030;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+    background-image: url('../img/pfp/thots/brando.png');
+}
+.infoProfile-Cont {
+    display: inline-block;
+    vertical-align: top;
+}
+.infoName {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+    padding: 10px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+.infoLine {
+    margin: 0 50% 10px 0;
+    transition: 0.5s;
+}
+.infoStats {
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    padding: 5px 0;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Info Bio*/
+.infoBio-Cont {
+    padding: 25px 0;
+}
+.infoBio-line {
+    margin: 0 0 18px 0;
+}
+.infoBio-text {
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Events */
+.eventCont {
+    padding: 15px;
+}
+.eventTitle {
+    font-size: 34px;
+    margin: 0;
+    color: #fff;
+    padding-bottom: 10px;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.eventLine {
+    margin: 0 80% 10px 0;
+}
+.eventList {
+    font-size: 18px;
+    margin: 0;
+    padding: 4px 0;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Avatars */
+.avatar.thotOne {
+    background-image: url('../img/pfp/thots/brando.png');
+}
+.avatar.thotTwo {
+    background-image: url('../img/pfp/thots/arando.png')
+}
+.avatar.thotThree {
+    background-image: url('../img/pfp/thots/zwei.png')
+}
+.avatar.thotFour {
+    background-image: url('../img/pfp/thots/sumi.png')
+}
+.avatar.thotFive {
+    background-image: url('../img/pfp/thots/ikea.png')
+}
+.avatar.thotSix {
+    background-image: url('../img/pfp/thots/major.png')
+}
+.avatar.thotSeven {
+    background-image: url('../img/pfp/thots/tipper.png')
+}
+.avatar.thotEight {
+    background-image: url('../img/pfp/thots/noah.png')
+}
