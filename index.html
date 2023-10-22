@@ -20,9 +20,15 @@
             <source src="vid.mp4" type="video/mp4">
           </video>
         <h1>WE ARE <span style="color: #fff">OOMFIE.STORE</span></h1>
-        <h2>WE KISS EACH OTHER AND KILL CRABS</h2>
+        <h2 id="factDisplay">WE KISS EACH OTHER AND KILL CRABS</h2>
 		<h2 style="font-size: 1.1em;">send us fanmail <span style="color: #dd2141">'oomfiebrando'</span> on discord</h2>
-        <img src="mute.gif" id="mute" class="z-index: 5;" width="300px" onClick="togglePlay()"/>
+        <img src="mute.png" id="mute" class="z-index: 5;" onClick="togglePlay()"/>
+
+        <!-- HALL OF FAME -->
+        <p>↓ HALL OF FAME ↓</p>
+        <div class="hof">
+            <img src="hof.png" id="hof" />
+        </div>
     </div>
     <iframe src="audio-chromefix.mp3" allow="autoplay" id="audio" style="display: none;"></iframe> 
     <audio autoplay loop id="volume">
@@ -44,5 +50,11 @@
         isPlaying = false;
     };
     document.getElementById('volume').volume = 0.05; /* Music Volume */
+
+    (function newFact() {
+        var facts = ['WE KISS EACH OTHER AND KILL CRABS', 'SHOUTOUT MY FELLA HAM GOOOF', 'THE CASSIE GOONSQUAD', 'MILLIONS MUST DIE', 'GUYS THE PT IS 29:59', 'HEYA! I AM CURRENTLY SNIPING A RUN', 'SHOUTOUT THE INSTANCE MANAGERS', 'CHAOS IS HERE AND ITS YOUR ISSUE', 'TERMS OF SERVICE ENJOYERS', '• living in their heads rent free •', 'OOMFIE SUPREMACY', '☆*: .｡. o(≧▽≦)o .｡.:*☆', 'SHOUTOUT THEY/THEM HOLTER', '6 MILLION CRYING LIGHTOIDS', 'PT25 FOR THE DEADBEATS', 'PT12 MY NAN IS STUCK IN TRAFFIC', 'LET EARLY PULLERS DIE', 'EXPERT "PREPULLERS"', '4CHAN EDGELORDS', 'TOTAL LIGGER DEATH', 'FEED LIGGERS TO CASSIE', 'GET LIGGERS HIT BY LITHIC BREATH' ];
+        var randomFact = Math.floor(Math.random() * facts.length);
+        document.getElementById('factDisplay').innerHTML = facts[randomFact];
+    })();
 </script>
 </html>
