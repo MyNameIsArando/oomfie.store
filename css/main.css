@@ -81,6 +81,15 @@ video {
     left: 0;
     z-index: -1;
 }
+.logo {
+    position: relative;
+    top: -11%;
+    transform: translateY(11%);
+    width: 280px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
 #mute {
     position: relative;
     top: 55%;
