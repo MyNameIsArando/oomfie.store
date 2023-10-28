@@ -9,6 +9,7 @@ body {
     background-image: url('../img/bg.gif');
     background-color: #2b2730;
     background-size: cover;
+    background-position: center;
     color: #9585A2; 
 }
 h1,h2 {
@@ -110,6 +111,9 @@ video {
     display: block;
     margin: 0 auto;
 }
+#disc {
+    font-size: 1.1em;
+}
 
 /* Animations */
 @keyframes one { /* curtains */
@@ -132,5 +136,48 @@ video {
 
 /* Mobile CSS */
 @media screen and (max-width: 1080px) { 
-
+    .logo {
+        position: relative;
+        top: -33%;
+        transform: translateY(33%);
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+    }
+    #mute {
+        position: relative;
+        top: 55%;
+        transform: translateY(-55%);
+        width: 80px;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+    }
+    h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-weight: bolder;
+        text-shadow: 5px 5px 5px #000;
+        margin-top: -2%;
+        margin-bottom: -3%;
+        
+    }
+    h2 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        text-shadow: 5px 5px 5px #000;
+        margin-top: -5%;
+    }
+    #disc {
+        font-size: 0.7em;
+    }
 }
