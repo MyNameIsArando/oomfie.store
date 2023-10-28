@@ -56,8 +56,8 @@ p {
     margin: 0;
     text-align: center;
     position: relative;
-    top: 75%;
-    transform: translateY(-75%);
+    top: 40%;
+    transform: translateY(-40%);
     text-shadow: 5px 5px 5px #000;
     animation: bounce 2.5s infinite;
 }
@@ -132,6 +132,20 @@ video {
 @keyframes four { /* text fade in */
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* sub-1080 CSS */
+@media screen and (max-width: 1700px) { 
+    .logo {
+        position: relative;
+        top: -21%;
+        transform: translateY(21%);
+        width: 20%;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+    }
+
 }
 
 /* Mobile CSS */
