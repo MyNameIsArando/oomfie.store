@@ -138,9 +138,9 @@ video {
 @media screen and (max-width: 1080px) { 
     .logo {
         position: relative;
-        top: -33%;
-        transform: translateY(33%);
-        width: 60%;
+        top: -40%;
+        transform: translateY(40%);
+        width: 53%;
         margin: 0 auto;
         display: block;
         cursor: pointer;
@@ -168,7 +168,7 @@ video {
         
     }
     h2 {
-        font-size: 1.5em;
+        font-size: 1.7em;
         text-transform: uppercase;
         position: relative;
         top: 50%;
