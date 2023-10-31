@@ -21,24 +21,17 @@ h1,h2 {
 h1 {
     font-size: 6em;
     text-transform: uppercase;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     color: #fff;
     font-weight: bolder;
     text-shadow: 5px 5px 5px #000;
-    margin-top: -2%;
-    margin-bottom: -3%;
+    margin: 0 0 0 0;
 }
 h2 {
     font-size: 2.7em;
     text-transform: uppercase;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     color: #fff;
     text-shadow: 5px 5px 5px #000;
-    margin-top: -1%;
+    margin: 5px 0;
 }
 hr {
     margin: 0 30% 10px 30%;
@@ -55,16 +48,15 @@ p {
     color: #fff; /* inherit bg colour from colour class */
     margin: 0;
     text-align: center;
-    position: relative;
-    top: 40%;
-    transform: translateY(-40%);
+    padding-top: 40px;
     text-shadow: 5px 5px 5px #000;
+    letter-spacing: 5px;
     animation: bounce 2.5s infinite;
 }
 @keyframes bounce {
-    0% {padding-bottom: 0;}
-    50% {padding-bottom: 2%;}
-    100% {padding-bottom: 0;}
+    0% {letter-spacing: 10px;}
+    50% {letter-spacing: 5px;}
+    100% {letter-spacing: 10px;}
 }
 
 
@@ -72,6 +64,12 @@ p {
 .container {
     width: 100%; height: 100%;
     overflow: hidden;
+}
+.center {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
 video {
     object-fit: cover;
@@ -83,25 +81,21 @@ video {
     z-index: -1;
 }
 .logo {
-    position: relative;
-    top: -11%;
-    transform: translateY(11%);
     width: 280px;
     margin: 0 auto;
     display: block;
+    padding-bottom: 20px;
     cursor: pointer;
 }
 #mute {
-    position: relative;
-    top: 55%;
-    transform: translateY(-55%);
     width: 80px;
     margin: 0 auto;
     display: block;
     cursor: pointer;
 }
 .hof {
-    width: 100%; padding: 20px 0;
+    width: 100%;
+    padding: 20px 0;
     background-color: #000000dc;
     position: absolute;
     top: 100%;
@@ -136,62 +130,34 @@ video {
 
 /* sub-1080 CSS */
 @media screen and (max-width: 1700px) { 
-    .logo {
-        position: relative;
-        top: -21%;
-        transform: translateY(21%);
-        width: 20%;
-        margin: 0 auto;
-        display: block;
-        cursor: pointer;
+    h1 {
+        font-size: 4.5em;
+        text-shadow: 5px 5px 5px #000;
+        margin: 0 0 0 0;
     }
-
+    h2 {
+        font-size: 2em;
+        margin: 5px 0;
+    }
+    p {
+        font-size: 1.4em;
+        padding-top: 30px;
+    }
 }
 
 /* Mobile CSS */
 @media screen and (max-width: 1080px) { 
-    .logo {
-        position: relative;
-        top: -40%;
-        transform: translateY(40%);
-        width: 53%;
-        margin: 0 auto;
-        display: block;
-        cursor: pointer;
-    }
-    #mute {
-        position: relative;
-        top: 55%;
-        transform: translateY(-55%);
-        width: 80px;
-        margin: 0 auto;
-        display: block;
-        cursor: pointer;
-    }
     h1 {
-        font-size: 3em;
-        text-transform: uppercase;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #fff;
-        font-weight: bolder;
+        font-size: 2.5em;
         text-shadow: 5px 5px 5px #000;
-        margin-top: -2%;
-        margin-bottom: -3%;
-        
+        margin: 0 0 0 0;
     }
     h2 {
-        font-size: 1.7em;
-        text-transform: uppercase;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #fff;
-        text-shadow: 5px 5px 5px #000;
-        margin-top: -5%;
+        font-size: 1.2em;
+        margin: 5px 0;
     }
-    #disc {
+    p {
         font-size: 0.7em;
+        padding-top: 30px;
     }
 }
