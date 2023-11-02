@@ -24,7 +24,8 @@ h1 {
     color: #fff;
     font-weight: bolder;
     text-shadow: 5px 5px 5px #000;
-    margin: 0 0 0 0;
+    margin: 0;
+    animation: silly2 1.8s infinite;
 }
 h2 {
     font-size: 2.7em;
@@ -32,6 +33,7 @@ h2 {
     color: #fff;
     text-shadow: 5px 5px 5px #000;
     margin: 5px 0;
+    animation: silly 1.6s infinite;
 }
 hr {
     margin: 0 30% 10px 30%;
@@ -51,12 +53,22 @@ p {
     padding-top: 40px;
     text-shadow: 5px 5px 5px #000;
     letter-spacing: 5px;
-    animation: bounce 2.5s infinite;
+    animation: bounce 1.5s infinite;
 }
 @keyframes bounce {
-    0% {letter-spacing: 10px;}
-    50% {letter-spacing: 5px;}
-    100% {letter-spacing: 10px;}
+    0% {letter-spacing: 10px; color: #fff;}
+    50% {letter-spacing: 5px; color: #ff0000;}
+    100% {letter-spacing: 10px; color: #fff;}
+}
+@keyframes silly {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1)}
+}
+@keyframes silly2 {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
 }
 
 
@@ -85,13 +97,14 @@ video {
     margin: 0 auto;
     display: block;
     padding-bottom: 20px;
-    cursor: pointer;
+    animation: silly2 2s infinite;
 }
 #mute {
     width: 80px;
     margin: 0 auto;
     display: block;
     cursor: pointer;
+    animation: silly 0.9s infinite;
 }
 .hof {
     width: 100%;
@@ -107,6 +120,12 @@ video {
 }
 #disc {
     font-size: 1.1em;
+}
+.gm {
+    width: 180px;
+    position: absolute;
+    display: block;
+    bottom: 2%; left: 2%;
 }
 
 /* Animations */
